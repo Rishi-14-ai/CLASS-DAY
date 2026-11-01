@@ -2,7 +2,7 @@
   "name": "Classday — Timetable & Attendance",
   "short_name": "Classday",
   "description": "Your weekly timetable and offline class attendance tracker.",
-  "start_url": "./index.html",
+  "start_url": "./?app=3",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f7fb",
