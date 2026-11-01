@@ -1,4 +1,4 @@
-const CACHE = "classday-v1";
+const CACHE = "classday-v2";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
@@ -16,3 +16,4 @@ self.addEventListener("fetch", event => {
     return response;
   }).catch(() => caches.match("./index.html"))));
 });
+
